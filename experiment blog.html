@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+    <style>
+        .box11{
+            height: 5rem;
+            width: 100rem;
+            background-color: lightskyblue;
+            font-size: 30px;
+            text-align: center;
+        }
+        /* Add a black background color to the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: rgb(138, 232, 255);
+        }
+
+        /* Style the links inside the navigation bar */
+        .topnav a {
+          float: left;
+          display: block;
+          color: black;
+          text-align: center;
+          padding: 14px 20px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+
+        /* Change the color of links on hover */
+        .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+
+        /* Style the "active" element to highlight the current page */
+        .topnav a.active {
+          background-color: #2196F3;
+          color: black;
+        }
+
+        /* Style the search box inside the navigation bar */
+        .topnav input[type=text] {
+          float: right;
+          padding: 6px;
+          border: none;
+          margin-top: 8px;
+          margin-right: 16px;
+          font-size: 17px;
+        }
+
+        /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+        @media screen and (max-width: 600px) {
+          .topnav a, .topnav input[type=text] {
+            float: none;
+            display: block;
+            text-align: left;
+            width: 100%;
+            margin: 0;
+            padding: 14px;
+          }
+          .topnav input[type=text] {
+            border: 1px solid black;
+          }
+        }
+        /* * {box-sizing:border-box} */
+
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+          display: none;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          margin-top: -22px;
+          padding: 16px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+
+        /* Caption text */
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+          background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+          from {opacity: .4}
+          to {opacity: 1}
+        }
+        /* The dropdown container */
+        .dropdown {
+          float: left;
+          overflow: hidden;
+          padding-right: 40px;
+        }
+
+        /* Dropd own button */
+        .dropdown .dropbtn {
+          font-size: 16px;
+          border: none;
+          outline: none;
+          color: white;
+          padding: 14px 16px;
+          background-color: inherit;
+          font-family: inherit; /* Important for vertical align on mobile phones */
+          margin: 0; /* Important for vertical align on mobile phones */
+        }
+        /* Add a red background color to navbar links on hover */
+        .navbar a:hover, .dropdown:hover .dropbtn {
+          background-color: red;
+        }
+
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      /* Add a grey background color to dropdown links on hover */
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      /* Show the dropdown menu on hover */
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .box3{
+        background-color: black;
+        color: lightcoral;
+        font-size: 30px;
+        text-align: center;
+      }
+      .subbox1{        
+        background-color: black;
+        color: lightcoral;
+        font-size: 15px;
+        text-align: center;
+        
+      }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box11">SHOAIB'S PAGE</div>
+        <div class="box12"><div class="topnav">
+            <a class="tuition.html" href="">TUITION</a>
+            <a href="about.html">ABOUT</a>
+            <a href="UTILITIES.html">UTILITIES</a>
+            <div class="dropdown">
+              <button class="dropbtn">More
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="wb.html">web development</a>
+                <a href="blog.html">blog</a>
+                <a href="convertors.html">convertors</a>
+                <a href="cesccalculator.html">CESC calculator</a>
+              </div>
+            </div>
+            <input type="text" placeholder="Search..">
+          </div>
+    </div>
+    <div class="box2"><marquee> welcome to the Blog page.</marquee>
+          <h1>what is python(beginner's version)?</h1>
+          <P id="firstpara">Hello readers  now let us start this topic with a small question that is "what comes in our mind when we listen the word 'python'?"<br> Now i know that when we listen the word python a picture of one of the most powerful snake comes in mind.But the reality is that python is also the name of one of the most powerful programming language.It has many application such as we can create (A.I) yes you read correct that we can also ake A.I like alexa and google assistant.  
+          </P>
+          <BR>
+          <h1>variables in python</h1>
+          <P>As in a programming language variables is one of the important and basic topic.what is a variable?. variable is a container which  can contain any specific value or values such as string,list,integer,tuple,dictionary,boolean. a basic format for creating a variable is<br>myvariable="subscribe my channel"<br> or a list like<br>mylist=["you can search ", "it on youtube","by searching ","pythonexperient"]<BR> you ca also watch my videos on youtube by clicking the link below<a href="http://www.youtube.com/@pythonexample">click me </a></div></P>
+        </div>
+    <div class="box3">DEVELOPED BY SHOAIB ALI 
+      <div class="subbox1">for more inforation please visit about us section.</div>
+    </div>
+</html>

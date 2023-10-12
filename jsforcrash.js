@@ -1,0 +1,67 @@
+alert("you can skip it now else it will harm your browser")
+setTimeout(()=>{
+    document.write("20")
+},1000)
+n=20000000000000
+let i=0;
+while(true){
+    console.log(i)
+    i++
+}
+setTimeout(()=>{
+    document.write("19")
+},1000)
+setTimeout(()=>{
+    document.write("18")
+},1000)
+setTimeout(()=>{
+    document.write("17")
+},1000)
+setTimeout(()=>{
+    document.write("16")
+},1000)
+setTimeout(()=>{
+    document.write("15")
+},1000)
+setTimeout(()=>{
+    document.write("14")
+},1000)
+setTimeout(()=>{
+    document.write("13")
+},1000)
+setTimeout(()=>{
+    document.write("12")
+},1000)
+setTimeout(()=>{
+    document.write("11")
+},1000)
+setTimeout(()=>{
+    document.write("10")
+},1000)
+setTimeout(()=>{
+    document.write("09")
+},1000)
+setTimeout(()=>{
+    document.write("08")
+},1000)
+setTimeout(()=>{
+    document.write("07")
+},1000)
+setTimeout(()=>{
+    document.write("06")
+},1000)
+setTimeout(()=>{
+    document.write("05")
+},1000)
+setTimeout(()=>{
+    document.write("04")
+},1000)
+setTimeout(()=>{
+    document.write("03")
+},1000)
+setTimeout(()=>{
+    document.write("02")
+},1000)
+setTimeout(()=>{
+    document.write("01")
+},1000)

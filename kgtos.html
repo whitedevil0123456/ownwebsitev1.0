@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<title>Kilograms to Stones Weight Converter</title>
+<body>
+
+<h2>Weight Converter</h2>
+<p>Type a value in the Kilograms field to convert the value to Stones:</p>
+
+<p>
+  <label>Kilograms</label>
+  <input id="inputKilograms" type="number" placeholder="Kilograms" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+</p>
+<p>Stones: <span id="outputStones"></span></p>
+
+<script>
+function weightConverter(valNum) {
+  document.getElementById("outputStones").innerHTML=valNum*0.1574;
+}
+</script>
+
+</body>
+</html>

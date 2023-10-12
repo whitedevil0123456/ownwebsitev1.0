@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webdesigning</title>
+    <style>.box11{
+        height: 5rem;
+        width: 100rem;
+        background-color: lightskyblue;
+        font-size: 30px;
+        text-align: center;
+    }
+    /* Add a black background color to the top navigation bar */
+    .topnav {
+        overflow: hidden;
+        background-color: rgb(138, 232, 255);
+    }
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+      float: left;
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    /* Change the color of links on hover */
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Style the "active" element to highlight the current page */
+    .topnav a.active {
+      background-color: #2196F3;
+      color: black;
+    }
+
+    /* Style the search box inside the navigation bar */
+    .topnav input[type=text] {
+      float: right;
+      padding: 6px;
+      border: none;
+      margin-top: 8px;
+      margin-right: 16px;
+      font-size: 17px;
+    }
+
+    /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+    @media screen and (max-width: 600px) {
+      .topnav a, .topnav input[type=text] {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+      }
+      .topnav input[type=text] {
+        border: 1px solid black;
+      }
+    }
+            /* The dropdown container */
+            .dropdown {
+          float: left;
+          overflow: hidden;
+          padding-right: 40px;
+        }
+
+        /* Dropd own button */
+        .dropdown .dropbtn {
+          font-size: 16px;
+          border: none;
+          outline: none;
+          color: white;
+          padding: 14px 16px;
+          background-color: inherit;
+          font-family: inherit; /* Important for vertical align on mobile phones */
+          margin: 0; /* Important for vertical align on mobile phones */
+        }
+        /* Add a red background color to navbar links on hover */
+        .navbar a:hover, .dropdown:hover .dropbtn {
+          background-color: red;
+        }
+
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      /* Add a grey background color to dropdown links on hover */
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      /* Show the dropdown menu on hover */
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .box3{
+        background-color: black;
+        color: lightcoral;
+        font-size: 30px;
+        text-align: center;
+      }
+      .subbox1{        
+        background-color: black;
+        color: lightcoral;
+        font-size: 15px;
+        text-align: center;
+        
+      }
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box11">SHOAIB'S PAGE</div>
+        <div class="box12"><div class="topnav">
+            <a class="tuition.html" href="">TUITION</a>
+            <a href="about.html">ABOUT</a>
+            <a href="UTILITIES.html">UTILITIES</a>
+            <div class="dropdown">
+              <button class="dropbtn">More
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="wb.html">web development</a>
+                <a href="python.html">python</a>
+                <a href="convertors.html">convertors</a>
+                <a href="cesccalculator.html">CESC calculator</a>
+              </div>
+            </div>
+            <input type="text" placeholder="Search..">
+          </div>
+    </div>
+    <div class="box3">DEVELOPED BY SHOAIB ALI 
+        <div class="subbox1">for more inforation please visit about us section.</div>
+      </div>
+      
+</body>
+</html>
